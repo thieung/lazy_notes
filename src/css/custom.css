@@ -1,0 +1,43 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+
+:root {
+  font-family: "Inter", sans-serif;
+  --doc-sidebar-width: 250px !important;
+  --ifm-color-primary: #61afef;
+  --ifm-color-primary-dark: #52a0e0;
+  --ifm-color-primary-darker: #4290d0;
+  --ifm-color-primary-darkest: #2472b2;
+  --ifm-color-primary-light: #70befe;
+  --ifm-color-primary-lighter: #80ceff;
+  --ifm-color-primary-lightest: #8fddff;
+  --ifm-code-font-size: 95%;
+}
+
+:root .navbar__title {
+  margin-left: 4px;
+  font-size: 1.75rem;
+}
+
+.navbar__item.navbar__link[href*="github"] {
+  padding: 0 1.5rem 0 0;
+  display: flex;
+  font-size: 0;
+}
+
+.navbar__item.navbar__link[href*="github"]:before {
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url("/img/brand-github.svg");
+  background-repeat: no-repeat;
+}
+
+html[data-theme="dark"] .navbar__item.navbar__link[href*="github"]:before {
+  background-image: url("/img/brand-github-inverted.svg");
+}
